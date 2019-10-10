@@ -1,13 +1,20 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import NavBar from "./components/Navbar";
+import Cart from "./components/Cart";
+import Default from "./components/Default";
+import Details from "./components/Details";
+import Product from "./components/Product";
+import ProductList from "./components/ProductList";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h3>hello from app</h3>
+        <NavBar />
       </React.Fragment>
     );
   }
