@@ -12,8 +12,6 @@ export default class ProductList extends Component {
   };
 
   render() {
-    console.log(this.state.products);
-
     return (
       <React.Fragment>
         <div className="py-5">
@@ -22,7 +20,7 @@ export default class ProductList extends Component {
             <div className="row">
               <ProductConsumer>
                 {value => {
-                  console.log(value);
+                  // console.log(value);
                   return value.products.map(product => {
                     return <Product key={product.id} product={product} />;
                   });
@@ -31,7 +29,6 @@ export default class ProductList extends Component {
             </div>
           </div>
         </div>
-        {/* <Product /> */}
       </React.Fragment>
     );
   }
